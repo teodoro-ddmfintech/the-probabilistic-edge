@@ -6,12 +6,12 @@
     <title>The Probabilistic Edge</title> 
     
     <!-- Linking to CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     
     <!-- Icons -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/imgs/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/imgs/favicon.svg" />
+    <link rel="shortcut icon" href="/imgs/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 </head>
@@ -20,7 +20,7 @@
 
     <header>
         <div class="header-content">
-            <img src="probabilistic.png" alt="logo">
+            <img src="/imgs/probabilistic-edge.png" alt="logo">
             <a class="logo" href="#">THE PROBABILISTIC EDGE</a>
         </div>
         <nav>
@@ -58,40 +58,57 @@
         <h2>Junte-se à nossa newsletter gratuita</h2>
         <p>Subscreva-se para receber e-mails semanais sobre estratégias mentais usadas por profissionais no trading.</p>
         
-        <form id="substack-form" action="https://theprobabilisticedge.substack.com/api/v1/free" method="Post" > <!-- action="Put the substack link" method='Post' -->
+        <!-- Adding the substack API -->
+    
+        <div id="custom-substack-embed"></div>
+            <script>
+            window.CustomSubstackWidget = {
+                substackUrl: "theprobabilisticedge.substack.com",
+                placeholder: "example@gmail.com",
+                buttonText: "Subscreva-se",
+                theme: "custom",
+                colors: {
+                primary: "#F39C12",
+                input: "#FFFFFF",
+                email: "#000000",
+                text: "#000000",
+                },
+            };
+            </script>
+            <script src="https://substackapi.com/widget.js" async></script>
+
+        <!-- End of the substack API -->
+        
+        <!--         
+        Possibility:
+        <form id="substack-form" action="https://theprobabilisticedge.substack.com/api/v1/free" method="Post" >
             <input type="email" placeholder="Digite seu e-mail" required>
             <button type="submit" style="color: white;
             font-weight: bold;">Subscreva-se Gratuitamente</button>
-        </form>
+        </form> -->
+    
+    
     </div>
 
     
     <div class="depoimentos fade-in">
-        <h2>📚 O que os leitores dizem?</h2>
+        <h2>📚 O que os leitores e mentorados dizem?</h2>
         <div class="testimonials">
         <blockquote>
-            <p>"A The Probabilistic Edge me ajudou a entender o pensamento probabilístico de uma maneira que eu nunca imaginei ser possível. Agora, minhas decisões de trading são muito mais fundamentadas!"</p>
-            <footer>— Sandro Roger, Trader Profissional</footer>
+            <p>"Em questão de mindset, dos mentores que passei, você foi o único que conseguiu suprir essa necessidade. Aquele livro, se eu tivesse acesso no início da carreira de trader teria sido diferente."</p>
+            <footer>— Sandro Roger, Trader financiado</footer>
         </blockquote>
         <blockquote>
-            <p>"Os insights semanais são valiosos! Aprendi a aplicar estratégias que realmente funcionam no mercado." </p>
-            <footer>— Alef Samis, Investidora</footer>
+            <p>"Você é o cara. Muito obrigado pela disponibilidade de sempre. Sou grato pelo seu apoio em minha jornada como trader." </p>
+            <footer>— Alef Samis, Trader financiado</footer>
         </blockquote>
         <blockquote>
-            <p>"Excelente conteúdo! A forma como explicam os conceitos é clara e acessível. Recomendo a todos que desejam se aprofundar no trading."</p>
-            <footer>— Taiane, Analista Financeiro</footer>
+            <p>"Só tenho a agradecer mesmo. Melhor investimento que fiz. Top demais."</p>
+            <footer>— Taiane, Trader financiada</footer>
         </blockquote>
         <blockquote>
-            <p>"Os materiais educativos gratuitos são uma ótima introdução ao pensamento probabilístico. Aprendi muito!"</p>
-            <footer>— Bruno, Novata no Trading</footer>
-        </blockquote>
-        <blockquote>
-            <p>"A newsletter é um recurso incrível. Sempre fico ansioso para receber as novidades e dicas valiosas!"</p>
-            <footer>— ..., Trader Iniciante</footer>
-        </blockquote>
-        <blockquote>
-            <p>"Graças à The Probabilistic Edge, minha abordagem ao trading mudou completamente. Sinto-me mais confiante nas minhas decisões."</p>
-            <footer>— ..., Profissional de Investimentos</footer>
+            <p>"A parte de mindset achei muito rico em conteúdo."</p>
+            <footer>— Bruno, Trader aprendiz</footer>
         </blockquote>
         </div>
     </div>
@@ -102,33 +119,33 @@
         <a href="https://theblackalienxfx.gumroad.com/l/cepbni?_gl=1*82cqm*_ga*MTY2NDk1MjkzNy4xNzM2MDY4NzYx*_ga_6LJN6D94N6*MTczOTkzOTkxMC4xNC4wLjE3Mzk5Mzk5MTAuMC4wLjA." target="_blank" class="cta-button">Baixar E-book</a>
     </div>
 
+    <!-- Adding the substack API -->
+    
+    <div id="custom-substack-embed"></div>
+    <script>
+    window.CustomSubstackWidget = {
+        substackUrl: "teodoroinvestmentresearch.substack.com",
+        placeholder: "example@gmail.com",
+        buttonText: "Subscreva-se",
+        theme: "custom",
+        colors: {
+        primary: "#F39C12",
+        input: "#FFFFFF",
+        email: "#000000",
+        text: "#000000",
+        },
+    };
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+
+    <!-- End of the substack API -->
+
+
+    
+
     <footer>
         &copy; The Probabilistic Edge 2025. Todos os direitos reservados.
     </footer>
     
-    <script>
-    document.getElementById("substack-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent page reload
-        
-        const email = document.getElementById("email").value;
-        const url = "https://theprobabilisticedge.substack.com/api/v1/free";
-    
-        fetch(url, {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams({ email: email })
-        })
-        .then(response => {
-            if (response.ok) {
-                alert("🎉 Inscrição realizada com sucesso! Verifique seu e-mail.");
-            } else {
-                alert("⚠️ Algo deu errado. Tente novamente.");
-            }
-        })
-        .catch(error => console.error("Erro:", error));
-    });
-    </script>
-    
-
 </body>
 </html>
